@@ -1,10 +1,12 @@
+# Lab-2-Build-a-VPC-and-launching-a-webserver
+
 # Build Your VPC and Launch a Web Server (AWS) 
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: POOJA P
+* **Register Number**: 212224230195
+* **Date of Submission**: 17-08-2026
 
 ---
 
@@ -41,18 +43,15 @@ Create a new Virtual Private Cloud (VPC) with a private IP address range. The VP
 
 Students should create a VPC with an appropriate CIDR block (for example, 10.0.0.0/16) and assign a meaningful name.
 
-
 ### Task 2: Create a Public Subnet
 
 Create a subnet inside the VPC to host public resources. Enable auto-assign public IPv4 so that instances launched in this subnet receive a public IP address.
 
 The subnet should use a smaller CIDR range (for example, 10.0.1.0/24).
 
-
 ### Task 3: Create and Attach Internet Gateway
 
 Create an Internet Gateway (IGW) and attach it to the VPC. This allows communication between resources in the VPC and the internet.
-
 
 ### Task 4: Configure Route Table
 
@@ -81,17 +80,20 @@ Attach the previously created security group and key pair.
 
 Install and start a web server (Apache HTTPD) on the EC2 instance using user data or manual commands.
 
-Create a simple HTML page and verify that it can be accessed from a web browser using the public IP address of the instance.---
+Create a simple HTML page and verify that it can be accessed from a web browser using the public IP address of the instance.
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. Set up a VPC with public and private subnets.
+
+2. Added extra subnets in a second Availability Zone.
+
+3. Configured the route tables, Internet Gateway, and NAT Gateway.
+
+4. Created a security group and launched an EC2 instance as a web server.
+
+5. Checked the deployed web server using its public DNS address.
 
 ---
 
@@ -99,19 +101,28 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1918" height="1078" alt="lab2-1" src="https://github.com/user-attachments/assets/9148ddcd-80dd-4283-86a0-0a9e5ff7306c" />
+
+<img width="1918" height="1078" alt="lab2-1 1" src="https://github.com/user-attachments/assets/56b78fc4-3ffc-4867-97a8-ecf7176dd6c1" />
+
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1918" height="1078" alt="lab2-2" src="https://github.com/user-attachments/assets/28310c51-2f6e-4cb2-83e6-f9669fc0bb0f" />
+
+<img width="1918" height="1078" alt="lab2-2 1" src="https://github.com/user-attachments/assets/90289dee-ed68-422e-9423-36187b4fd43c" />
+
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-(Insert Screenshot Here)
+<img width="1918" height="1078" alt="lab2-3" src="https://github.com/user-attachments/assets/d981bc12-6f42-488a-a68e-d7f1268d1506" />
+
+<img width="1918" height="1078" alt="lab2-final" src="https://github.com/user-attachments/assets/a1d4ed37-6b12-402a-be1a-66933b0247ed" />
+
 
 ---
 
